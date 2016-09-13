@@ -7,4 +7,6 @@ public class MedicalForm {
     Address address;
     int yearOfBirth;
     String[] allergies = new String[5];
+
+
 }
