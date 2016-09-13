@@ -5,14 +5,20 @@ public class Person {
     String name;
     int age;
     boolean isAlive;
+    static int minimumAge = 18;
 
+    Person(String newName, int newAge, boolean newIsAlive) {
+        setName(newName);
+        setAge(newAge);
+        setIsAlive(newIsAlive);
+    }
 
     String getName() {
         return name;
     }
 
     void setName(String newName) {
-        if (newName.contains(" ")) {
+        if (isValidName(newName)) {
             name = newName;
         }
 
@@ -23,7 +29,7 @@ public class Person {
     }
 
     void setAge(int newAge) {
-        if (newAge >= 18) {
+        if (newAge >= minimumAge) {
             age = newAge;
         }
     }
@@ -40,5 +46,9 @@ public class Person {
             isAlive = newIsAlive;
 
         }
+    }
+
+    static boolean isValidName(String name) {
+        return name.contains(" ");
     }
 }
