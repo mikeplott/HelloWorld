@@ -68,6 +68,14 @@ public class Main {
         String alice = names2.get(0);
         String bob = (String) person.get("name");
 
+        HashMap<String, Person> users = new HashMap<>();
+        Person p = new Person("Bob", 30, true);
+        users.put("bob", p);
+        Person p2 = users.get("bob");
+        Person p2 = users.get("alice");
+        if (p2 == null) {
+            users.put("alice", new Person("Alice", 30, true));
         }
     }
+}
 
