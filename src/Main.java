@@ -44,13 +44,13 @@ public class Main {
 
          */
 
-        ArrayList<String> names2 = new ArrayList();
-        names2.add("Alice");
-        names2.add("Bob");
-        names2.add("Charlie");
-       // System.out.println(names2.get(0));
-        names2.remove(1);
-        System.out.println(names2);
+//        ArrayList<String> names2 = new ArrayList();
+//        names2.add("Alice");
+//        names2.add("Bob");
+//        names2.add("Charlie");
+//       // System.out.println(names2.get(0));
+//        names2.remove(1);
+//        System.out.println(names2);
 
         HashMap<String, Object> person = new HashMap();
         person.put("name", "Alice");
@@ -65,17 +65,17 @@ public class Main {
 
        // person.put("names", names2);
         //System.out.println(person);
-        String alice = names2.get(0);
-        String bob = (String) person.get("name");
-
-        HashMap<String, Person> users = new HashMap<>();
-        Person p = new Person("Bob", 30, true);
-        users.put("bob", p);
-        Person p2 = users.get("bob");
-        Person p2 = users.get("alice");
-        if (p2 == null) {
-            users.put("alice", new Person("Alice", 30, true));
-        }
+//        String alice = names2.get(0);
+//        String bob = (String) person.get("name");
+//
+//        HashMap<String, Person> users = new HashMap<>();
+//        Person p = new Person("Bob", 30, true);
+//        users.put("bob", p);
+//        Person p2 = users.get("bob");
+//        Person p2 = users.get("alice");
+//        if (p2 == null) {
+//            users.put("alice", new Person("Alice", 30, true));
+//        }
     }
 }
 

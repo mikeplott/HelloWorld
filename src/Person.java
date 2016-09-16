@@ -5,6 +5,7 @@ public class Person {
     String name;
     int age;
     boolean isAlive;
+    double balance;
     static int minimumAge = 18;
 
     Person(String newName, int newAge, boolean newIsAlive) {
@@ -18,9 +19,9 @@ public class Person {
     }
 
     void setName(String newName) {
-        if (isValidName(newName)) {
+        //if (isValidName(newName)) {
             name = newName;
-        }
+        //}
 
     }
 
