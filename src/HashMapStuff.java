@@ -19,7 +19,6 @@ public class HashMapStuff {
         while (keepRunning) {
             System.out.println("Enter username");
             String name = scanner.nextLine();
-
             if (!users.containsKey(name)) {
                 Person p = new Person(name, 30, true);
                 users.put(name, p);
@@ -27,7 +26,6 @@ public class HashMapStuff {
                 }
                 Person person = users.get(name);
                 System.out.println("Logged in as: " + person.name);
-
             }
         }
     }
