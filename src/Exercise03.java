@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.stream.Collectors;
 
 /**
  * Created by michaelplott on 9/21/16.
@@ -35,6 +36,12 @@ public class Exercise03 {
             }
         }
 
+        // stream
+        namesArr = new ArrayList<>(Arrays.asList(names));
+        namesArr = namesArr.stream().filter((name) -> {
+            return !name.startsWith("a");
+        }).collect(Collectors.toCollection(ArrayList::new));
+        System.out.println(namesArr);
     }
 }
 
