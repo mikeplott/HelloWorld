@@ -43,6 +43,18 @@ public class Exercise03 {
         }).collect(Collectors.toCollection(ArrayList::new));
         System.out.println(namesArr);
     }
+
+
+    /* class notes
+
+    GET /
+    GET /msg?id=5  get information
+    GET /login
+    POST /mgs    update information
+    POST /login
+
+    */
+
 }
 
 
